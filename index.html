@@ -3,104 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teqwise – Bygg teamet ditt med Teqwise</title>
+  <title>Teqwise – IT-konsulenter</title>
   <style>
-    :root {
-      --primary: #1e40af;
-      --secondary: #e5e7eb;
-      --text: #111827;
-    }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: var(--secondary);
-        color: var(--text);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      background-color: #f4f7fa;
+      color: #1c1c1c;
     }
 
     header {
-      background-color: var(--primary);
+      background-color: #002b45;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      max-width: 180px;
+      margin-bottom: 1rem;
     }
 
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
 
     main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
       text-align: center;
     }
 
-    .card h2 {
-      margin-top: 0;
-      color: var(--primary);
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #004a70;
     }
 
-    .button {
-      margin-top: 1.5rem;
-      display: inline-block;
-      background-color: var(--primary);
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background-color: #0077cc;
       color: white;
-      padding: 0.8rem 1.5rem;
+      padding: 1rem 2rem;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #3749ab;
+      font-weight: bold;
     }
 
     footer {
-      text-align: center;
+      background-color: #e5eef5;
       padding: 1rem;
+      text-align: center;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: #333;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Teqwise</h1>
-    <p>Bygg teamet ditt med Teqwise.</p>
+    <img src="teqwise-logo.svg" alt="Teqwise logo" />
+    <h1>Bygg teamet ditt med Teqwise</h1>
   </header>
 
   <main>
-    <div class="card">
-      <h2>Vi kobler deg med de beste IT-konsulentene i Norge</h2>
-      <p>Teqwise hjelper deg å finne riktige folk til riktig prosjekt. Backend, frontend, DevOps og mer.</p>
-      <a href="mailto:kontakt@teqwise.no" class="button">Kontakt oss</a>
+    <p class="tagline">Vi matcher de beste IT-konsulentene med virksomheter som trenger fremdrift og kvalitet.</p>
+
+    <div class="cta">
+      <a href="mailto:kontakt@teqwise.no">Kontakt oss i dag</a>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Teqwise AS – Org.nr. 123 456 789
+    © 2025 Teqwise AS – Org.nr. 000 000 000. All rights reserved.
   </footer>
-
 </body>
 </html>
