@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teqwise – Smarte IT-konsulenter</title>
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #e5e7eb;
+      --text: #111827;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--secondary);
+        color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .button {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #3749ab;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Teqwise</h1>
+    <p>Smarte IT-konsulenter. Levert riktig.</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Vi kobler deg med de beste IT-konsulentene i Norge</h2>
+      <p>Teqwise hjelper deg å finne riktige folk til riktig prosjekt. Backend, frontend, DevOps og mer.</p>
+      <a href="mailto:kontakt@teqwise.no" class="button">Kontakt oss</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Teqwise AS – Org.nr. 123 456 789
+  </footer>
+
+</body>
+</html>
