@@ -6,11 +6,17 @@
   <title>Teqwise – IT-konsulenter</title>
   <meta name="description" content="Teqwise leverer kvalitetssikrede IT-konsulenter innen utvikling, DevOps og prosjektledelse for offentlig og privat sektor.">
   <link rel="stylesheet" href="index.css" />
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.header');
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
-      <img src="logo-teqwise.svg" alt="Teqwise logo" class="logo" />
+      <a href="#"><img src="logo-teqwise.svg" alt="Teqwise logo" class="logo" /></a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Åpne meny">☰</button>
       <nav class="nav" id="nav-menu">
         <a href="#tjenester">Våre tjenester</a>
@@ -29,7 +35,7 @@
     </div>
   </section>
 
-  <section class="section" id="tjenester">
+  <section class="section section-alt" id="tjenester">
     <div class="container row">
       <div class="text">
         <h2>Våre tjenester</h2>
@@ -44,7 +50,7 @@
   </section>
 
   <section class="section" id="hvorfor">
-    <div class="container row reverse">
+    <div class="container row">
       <img src="Consulting.avif" alt="Hvorfor velge oss" class="section-img" />
       <div class="text">
         <h2>Hvorfor velge oss?</h2>
@@ -57,12 +63,12 @@
     </div>
   </section>
 
-  <section class="section" id="partnere">
+  <section class="section section-alt" id="partnere">
     <div class="container row">
       <div class="text">
         <h2>Våre samarbeidspartnere</h2>
         <p>Vi samarbeider med både startups og etablerte aktører i offentlig og privat sektor.</p>
-        <div class="partner-logos">
+        <div class="partners">
           <img src="partner1.svg" alt="Partner 1" />
           <img src="partner2.svg" alt="Partner 2" />
           <img src="partner3.svg" alt="Partner 3" />
