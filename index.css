@@ -5,7 +5,6 @@
     box-sizing: border-box;
   }
   
-  /* GLOBAL */
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7fa;
@@ -41,7 +40,7 @@
   }
   
   .logo {
-    height: 60px;
+    height: 55px;
   }
   
   /* NAVIGATION */
@@ -64,7 +63,7 @@
     color: #004a70;
   }
   
-  /* MOBILE MENU BUTTON */
+  /* MENU-KNAPP FOR MOBIL */
   .menu-toggle {
     display: none;
     font-size: 1.8rem;
@@ -101,11 +100,13 @@
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .cta-button:hover {
     background-color: #00639c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   }
   
   /* SECTIONS */
@@ -118,10 +119,6 @@
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .reverse {
-    flex-direction: row-reverse;
   }
   
   .section-img {
@@ -140,9 +137,34 @@
     margin-bottom: 1rem;
   }
   
-  .section p {
+  .section p, .section ul {
     font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .section ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+  }
+  
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .partners img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .partners img:hover {
+    opacity: 1;
   }
   
   /* FOOTER */

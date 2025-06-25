@@ -4,17 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teqwise – IT-konsulenter</title>
+  <meta name="description" content="Teqwise leverer kvalitetssikrede IT-konsulenter innen utvikling, DevOps og prosjektledelse for offentlig og privat sektor.">
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <img src="logo-teqwise.svg" alt="Teqwise logo" class="logo" />
-
-      <button class="menu-toggle" id="menu-toggle" aria-label="Åpne meny">
-        ☰
-      </button>
-
+      <button class="menu-toggle" id="menu-toggle" aria-label="Åpne meny">☰</button>
       <nav class="nav" id="nav-menu">
         <a href="#tjenester">Våre tjenester</a>
         <a href="#hvorfor">Hvorfor velge oss?</a>
@@ -26,8 +23,8 @@
   <section class="intro">
     <div class="container">
       <h1 class="header-title">Bygg teamet ditt med Teqwise</h1>
-      <p>Teqwise er et norsk IT-konsulentselskap som leverer kvalitetssikrede og fleksible IT-ressurser til offentlig og privat sektor.
-        Vi bistår med erfarne konsulenter innen utvikling, DevOps, prosjektledelse og rådgivning – skreddersydd etter dine behov. Våre konsulenter integreres sømløst i eksisterende team, enten for kortsiktige prosjekter eller langsiktige oppdrag.</p><p>Vi vektlegger tydelig kommunikasjon, høy faglig kvalitet og pålitelig leveranse. Med Teqwise får du en partner som forstår dine teknologiske utfordringer og hjelper deg å nå dine mål – enkelt og effektivt.</p>
+      <p>Teqwise er et norsk IT-konsulentselskap som leverer kvalitetssikrede og fleksible IT-ressurser til offentlig og privat sektor. Vi bistår med erfarne konsulenter innen utvikling, DevOps, prosjektledelse og rådgivning – skreddersydd etter dine behov. Våre konsulenter integreres sømløst i eksisterende team, enten for kortsiktige prosjekter eller langsiktige oppdrag.</p>
+      <p>Vi vektlegger tydelig kommunikasjon, høy faglig kvalitet og pålitelig leveranse. Med Teqwise får du en partner som forstår dine teknologiske utfordringer og hjelper deg å nå dine mål – enkelt og effektivt.</p>
       <a href="mailto:kontakt@teqwise.no" class="cta-button">Kontakt oss</a>
     </div>
   </section>
@@ -36,18 +33,26 @@
     <div class="container row">
       <div class="text">
         <h2>Våre tjenester</h2>
-        <p>Vi tilbyr ekspertise innen frontend-, backend- og fullstack-utvikling, DevOps og prosjektledelse – tilpasset dine behov.</p>
+        <ul class="features">
+          <li>Frontend-, backend- og fullstack-utvikling</li>
+          <li>DevOps og cloud-løsninger</li>
+          <li>Prosjektledelse og IT-rådgivning</li>
+        </ul>
       </div>
-      <img src="coding.avif" alt="Tjenestebilde 1" class="section-img" />
+      <img src="coding.avif" alt="Frontend og backend utvikling" class="section-img" />
     </div>
   </section>
 
   <section class="section" id="hvorfor">
     <div class="container row reverse">
-      <img src="Consulting.avif" alt="Tjenestebilde 2" class="section-img" />
+      <img src="Consulting.avif" alt="Hvorfor velge oss" class="section-img" />
       <div class="text">
         <h2>Hvorfor velge oss?</h2>
-        <p>Vi fokuserer på kvalitet, fleksibilitet og effektiv levering. Våre konsulenter er nøye utvalgt og har dokumentert erfaring.</p>
+        <ul class="features">
+          <li>Nøye utvalgte konsulenter med dokumentert erfaring</li>
+          <li>Fokus på kvalitet, fleksibilitet og rask levering</li>
+          <li>Sømløs integrasjon i ditt eksisterende team</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -57,14 +62,25 @@
       <div class="text">
         <h2>Våre samarbeidspartnere</h2>
         <p>Vi samarbeider med både startups og etablerte aktører i offentlig og privat sektor.</p>
+        <div class="partner-logos">
+          <img src="partner1.svg" alt="Partner 1" />
+          <img src="partner2.svg" alt="Partner 2" />
+          <img src="partner3.svg" alt="Partner 3" />
+        </div>
       </div>
-      <img src="team-image.avif" alt="Tjenestebilde 3" class="section-img" />
+      <img src="team-image.avif" alt="Samarbeidspartnere" class="section-img" />
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      © 2025 Teqwise AS – Org.nr. Kommer. Alle rettigheter reservert.
+      <div class="footer-links">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#hvorfor">Om oss</a>
+        <a href="#partnere">Partnere</a>
+      </div>
+      <p>Kontakt: <a href="mailto:kontakt@teqwise.no">kontakt@teqwise.no</a></p>
+      <p>© 2025 Teqwise AS – Org.nr. Kommer. Alle rettigheter reservert.</p>
     </div>
   </footer>
 
@@ -74,6 +90,9 @@
     toggle.addEventListener("click", () => {
       nav.classList.toggle("active");
     });
+    document.querySelectorAll('.nav a').forEach(link =>
+      link.addEventListener('click', () => nav.classList.remove('active'))
+    );
   </script>
 </body>
 </html>
