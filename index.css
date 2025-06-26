@@ -6,10 +6,6 @@
     scroll-behavior: smooth;
   }
   
-  html {
-    scroll-padding-top: 90px;
-  }
-  
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom, #004b70 0px, #f4f7fa 200px);
@@ -109,6 +105,7 @@
     color: #333;
   }
   
+  /* CTA */
   .cta-button {
     background-color: #004a70;
     color: white;
@@ -122,13 +119,12 @@
   .cta-button:hover {
     background-color: #00639c;
     transform: translateY(-3px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
   }
   
   /* SECTIONS */
   .section {
     padding: 4rem 0;
-    transition: all 0.3s ease;
   }
   
   .row {
@@ -136,7 +132,6 @@
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    transition: gap 0.3s ease;
   }
   
   .section-img {
@@ -218,8 +213,21 @@
   
   /* RESPONSIVE */
   @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo {
+      margin: 0.2rem 0;
+    }
+  
     .menu-toggle {
       display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
     }
   
     .nav {
@@ -228,14 +236,23 @@
       gap: 1rem;
       background-color: #004a70;
       padding: 1rem;
-      position: absolute;
-      top: 70px;
-      right: 1rem;
-      border-radius: 8px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      border-radius: 0;
     }
   
     .nav.active {
       display: flex;
+    }
+  
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .intro p {
+      font-size: 0.95rem;
     }
   
     .row {
@@ -253,17 +270,5 @@
   
     .cta-button {
       width: 100%;
-    }
-  
-    .section {
-      margin-top: 2rem;
-    }
-  
-    .header-title {
-      font-size: 1.5rem;
-    }
-  
-    .intro p {
-      font-size: 0.95rem;
     }
   }
